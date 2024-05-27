@@ -1,0 +1,691 @@
+{
+	"info": {
+		"_postman_id": "51bc5d8d-0d5c-4f94-bc38-37d83ef545a6",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30064816"
+	},
+	"item": [
+		{
+			"name": "practice",
+			"item": [
+				{
+					"name": "clinic",
+					"item": [
+						{
+							"name": "test",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/index/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"index",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "personGEt",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "\"/\"",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/person",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"person"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "personSave",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"ankit\",\r\n    \"age\" : \"24\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/person/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"person",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "personedit",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\" : 6,\r\n    \"name\":\"ankit patidar\",\r\n    \"age\" : \"10000\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/person/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"person",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "personUpdate",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\" : 6,\r\n   \"name\":\"nandu patidar\",\r\n    \"age\" : \"8\",\r\n    \"mobile\" : 324234\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/person/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"person",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "personUpdate Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\" : 2\r\n   // \"name\":\"nandu patidar\",\r\n    //\"age\" : \"6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/person/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"person",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "auth-token",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"'username\":\"admin\",\r\n    \"password\":12345678\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api-token-auth/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api-token-auth",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Books view",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/books/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "books add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"my life my rule\",\r\n    \"summary\" : \"test\",\r\n    \"isbn\" : \"isbn\",\r\n    \"author\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/books/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "books update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"my life my rule\",\r\n    \"summary\" : \"test\",\r\n    \"isbn\" : \"isbn\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/books/1/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "author",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\" :\"nandu\",\r\n    \"last_name\"  :  \"patidar\",\r\n    \"date_of_birth\" : \"10/06/1999\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/authors/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "authorAll",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\" :\"nandu\",\r\n    \"last_name\"  :  \"patidar\",\r\n    \"date_of_birth\" : \"10/06/1999\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/authors/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "authorDetails",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\" :\"nandu\",\r\n    \"last_name\"  :  \"patidar\",\r\n    \"date_of_birth\" : \"10/06/1999\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/authors/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "imageUpload",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\" :\"nandu\",\r\n    \"last_name\"  :  \"patidar\",\r\n    \"date_of_birth\" : \"10/06/1999\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/authors/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getImages",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\" :\"nandu\",\r\n    \"last_name\"  :  \"patidar\",\r\n    \"date_of_birth\" : \"10/06/1999\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/authors/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateImage",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\" :\"nandu\",\r\n    \"last_name\"  :  \"patidar\",\r\n    \"date_of_birth\" : \"10/06/1999\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/authors/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "orderPayment",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "token 1600f453b78c0c664d4af08facdc58410c92f80c",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\" :\"nandu\",\r\n    \"last_name\"  :  \"patidar\",\r\n    \"date_of_birth\" : \"10/06/1999\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/authors/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
