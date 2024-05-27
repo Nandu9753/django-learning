@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'books',
-    'rozarpay',
     'rest_framework',
     'rest_framework.authtoken'
 ]
@@ -152,5 +151,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-RAZORPAY_API_KEY = 'rzp_test_soZFPdgg7RqOhT	'
-RAZORPAY_API_SECRET = 'MYiJ2RVb1msngL'
